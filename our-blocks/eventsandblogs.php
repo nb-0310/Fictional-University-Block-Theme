@@ -21,6 +21,10 @@
             )
           ));
 
+          echo "<pre>";
+          print_r($homepageEvents);
+          echo "</pre>";
+
           while($homepageEvents->have_posts()) {
             $homepageEvents->the_post();
             get_template_part('template-parts/content', 'event');
